@@ -74,11 +74,21 @@ def k_fold_separate(x_train , y_train , x_val ,y_val , model_name1,model_name2,m
 
     
     model1 = create_model(model_name1)
-    
+        # Using a picewise constant decay scheduler:-
+    step = tf.Variable(0, trainable=False)
+    boundaries = [25, 50]
+    values = [1e-4, 1e-5, 1e-6]
+    learning_rate_fn = tf.keras.optimizers.schedules.PiecewiseConstantDecay(boundaries, values)
+
+    # Later, whenever we perform an optimization step, we pass in the step.
+    learning_rate = learning_rate_fn(step)
+
+
     # Compile the model
     model1.compile(loss='sparse_categorical_crossentropy',
-                  optimizer= tf.keras.optimizers.Adam(learning_rate=lr, beta_1=0.9, beta_2=0.999, decay=0.0001),
-                  metrics=['accuracy'])
+              optimizer= tf.keras.optimizers.Adam(learning_rate=learning_rate),
+              metrics=['accuracy'])
+    
 
 
     # Generate a print
@@ -131,7 +141,7 @@ def k_fold_separate(x_train , y_train , x_val ,y_val , model_name1,model_name2,m
     
     # Compile the model
     model2.compile(loss='sparse_categorical_crossentropy',
-                  optimizer= tf.keras.optimizers.Adam(learning_rate=0.0001, beta_1=0.9, beta_2=0.999, decay=0.0001),
+                  optimizer= tf.keras.optimizers.Adam(learning_rate=learning_rate, beta_1=0.9, beta_2=0.999, decay=0.0001),
                   metrics=['accuracy'])
 
 
@@ -187,7 +197,7 @@ def k_fold_separate(x_train , y_train , x_val ,y_val , model_name1,model_name2,m
     
     # Compile the model
     model3.compile(loss='sparse_categorical_crossentropy',
-                  optimizer= tf.keras.optimizers.Adam(learning_rate=0.0001, beta_1=0.9, beta_2=0.999, decay=0.0001),
+                  optimizer= tf.keras.optimizers.Adam(learning_rate=learning_rate, beta_1=0.9, beta_2=0.999, decay=0.0001),
                   metrics=['accuracy'])
 
 
