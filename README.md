@@ -7,9 +7,6 @@
 **MSENet: Mean and standard deviation based ensemble network for cervical cancer detection**
 
 Find the original paper [Coming Soon]().
-<p align="center">
-  <img src="./pipe.jpg" width="600" title="Overall Pipeline">
-</p>
 
 # Datasets Links
 1. [SIPaKMeD SCI Pap Smear Images](https://www.cs.uoi.gr/~marina/sipakmed.html)
