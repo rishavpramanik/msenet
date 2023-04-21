@@ -35,6 +35,6 @@ N = len(files_for_train_x)
 for i in range(0,N):
     k_fold_separate(files_for_train_x[i] , files_for_train_y[i] ,
                     files_for_validation_x[i] ,files_for_validation_y[i] ,
-                    "InceptionV3" , "MobileNetV2" ,"InceptionResNetV2" ,i+1 ,
+                    "InceptionV3" , "Xception" ,"VGG" ,i+1 ,
                     NUM_EPOCHS = args.num_epochs , train_batch=args.batch_size ,
                     validation_batch = args.batch_size, lr=args.lr)
