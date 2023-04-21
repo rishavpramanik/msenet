@@ -1,5 +1,5 @@
 # Mean and standard deviation based ensemble network for cervical cancer detection
-"MSENet: Mean and standard deviation based ensemble network for cervical cancer detection" published in CEngineering Applications of Artificial Intelligence, Elsevier
+"MSENet: Mean and standard deviation based ensemble network for cervical cancer detection" published in Engineering Applications of Artificial Intelligence, Elsevier
 ```
 @article{
 }
