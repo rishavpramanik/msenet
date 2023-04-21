@@ -5,7 +5,7 @@ from matplotlib.pyplot import imread
 from sklearn.metrics import confusion_matrix , accuracy_score
 from sklearn.metrics import precision_score, recall_score, f1_score
 from utils.create_model import create_model
-from utils.fuzzy_dist_ensemble import fuzzy_dist 
+from utils.mse_ensemble import mse_ensemble 
 
 
 
@@ -235,7 +235,7 @@ def k_fold_separate(x_train , y_train , x_val ,y_val , model_name1,model_name2,m
     print('F1 Score(Class wise): ',f1_score(y_val,y_preds , average= None), " mean- " , sum(f1_score(y_val,y_preds , average= None))/n)
     print('Conf Matrix Score(Class wise):\n ',confusion_matrix(y_val,y_preds ))   
     
-    ensem_pred=fuzzy_dist(preds1,preds2,preds3)
+    ensem_pred=mse_ensemble(model1,model2,model3,x_train , y_train , x_val ,y_val)
     print('Post Ensemble Accuracy Score: ',accuracy_score(y_val,ensem_pred))
 
     print('Post Ensemble Precision Score(Class wise): ',precision_score(y_val,ensem_pred , average= None ) , " mean- " , sum(precision_score(y_val,ensem_pred , average= None ))/n )
