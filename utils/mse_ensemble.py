@@ -17,11 +17,11 @@ def mse_ensemble(model1,model2,model3,x_train , y_train , x_val ,y_val):
     X2 = model2.predict(x_train)
     X3_val = model3.predict(x_val)
     X3 = model3.predict(x_train)
-    List = [[X1_val, X1], [X2_val, X2], [X3_val, X3]]
+    lst = [[X1_val, X1], [X2_val, X2], [X3_val, X3]]
     y_train = y_train.astype(int)
     y_val = y_val.astype(int)
     finals = []
-    for lists in List:
+    for lists in lst:
         mean=np.zeros((len(np.unique(y_train))),dtype=float),
         std=np.zeros((len(np.unique(y_train))),dtype=float)
         probs=[[] for i in range(len(np.unique(y_train)))]
