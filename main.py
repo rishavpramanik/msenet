@@ -5,11 +5,11 @@ from utils.k_fold_splits import k_fold_splits
 from utils.k_fold_separate import k_fold_separate
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--num_epochs', type=int, default = 70,
+parser.add_argument('--num_epochs', type=int, default = 75,
                     help='Number of Epochs for training')
 parser.add_argument('--path', type=str, default = './',
                     help='Path where the image data is stored')
-parser.add_argument('--batch_size', type=int, default = 16,
+parser.add_argument('--batch_size', type=int, default = 32,
                     help='Batch Size for Mini Batch Training')
 parser.add_argument('--kfold', type=int, default = 5,
                     help='Number of folds for training')
