@@ -1,20 +1,19 @@
-# Cervical cancer detection from Pap Smear Images
-"A fuzzy distance-based ensemble of deep models for cervical cancer detection" published in Computer Methods and Programs in Biomedicine (June 2022), Elsevier
+# Mean and standard deviation based ensemble network for cervical cancer detection
+"MSENet: Mean and standard deviation based ensemble network for cervical cancer detection" published in CEngineering Applications of Artificial Intelligence, Elsevier
 ```
 @article{
 }
 ```
-**A fuzzy distance-based ensemble of deep models for cervical cancer detection**
+**MSENet: Mean and standard deviation based ensemble network for cervical cancer detection**
 
-Find the original paper [here](https://www.sciencedirect.com/science/article/pii/S0169260722001626).
+Find the original paper [Coming Soon]().
 <p align="center">
   <img src="./pipe.jpg" width="600" title="Overall Pipeline">
 </p>
 
 # Datasets Links
 1. [SIPaKMeD SCI Pap Smear Images](https://www.cs.uoi.gr/~marina/sipakmed.html)
-2. [Herlev](http://mde-lab.aegean.gr/index.php/downloads)
-3. [Mendeley LBC](https://data.mendeley.com/datasets/zddtpgzv63/4)
+2. [Mendeley LBC](https://data.mendeley.com/datasets/zddtpgzv63/4)
 
 # Instructions to run the code
 Required directory structure:
@@ -43,9 +42,9 @@ python3 main.py --data_directory "data"
 ```
 
 Available arguments:
-- `--num_epochs`: Number of epochs of training. Default = 70
+- `--num_epochs`: Number of epochs of training. Default = 75
 - `--learning_rate`: Learning Rate. Default = 0.0001
-- `--batch_size`: Batch Size. Default = 16
+- `--batch_size`: Batch Size. Default = 32
 - `--path`: Data Path. Default= './'
 - `--kfold`: K-Fold, to perform K fold cross validation. Default= 5
 
