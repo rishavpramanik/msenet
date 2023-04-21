@@ -1,20 +1,7 @@
-[![Code Test](https://github.com/rishavpramanik/CervicalFuzzyDistanceEnsemble/actions/workflows/CodeQL.yml/badge.svg)](https://github.com/rishavpramanik/CervicalFuzzyDistanceEnsemble/actions/workflows/CodeQL.yml)
-[![DevSkim](https://github.com/rishavpramanik/CervicalFuzzyDistanceEnsemble/actions/workflows/devskim.yml/badge.svg?branch=main)](https://github.com/rishavpramanik/CervicalFuzzyDistanceEnsemble/actions/workflows/devskim.yml)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-fuzzy-distance-based-ensemble-of-deep/image-classification-on-herlev)](https://paperswithcode.com/sota/image-classification-on-herlev?p=a-fuzzy-distance-based-ensemble-of-deep)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-fuzzy-distance-based-ensemble-of-deep/image-classification-on-sipakmed)](https://paperswithcode.com/sota/image-classification-on-sipakmed?p=a-fuzzy-distance-based-ensemble-of-deep)
 # Cervical cancer detection from Pap Smear Images
 "A fuzzy distance-based ensemble of deep models for cervical cancer detection" published in Computer Methods and Programs in Biomedicine (June 2022), Elsevier
 ```
-@article{pramanik2022fuzzy,
-title = {A fuzzy distance-based ensemble of deep models for cervical cancer detection},
-author={Pramanik, Rishav and Biswas, Momojit and Sen, Shibaprasad and de Souza J{\'u}nior, Luis Antonio and Papa, Jo{\~a}o Paulo and Sarkar, Ram},
-journal = {Computer Methods and Programs in Biomedicine},
-volume = {219},
-pages = {106776},
-year = {2022},
-issn = {0169-2607},
-doi = {10.1016/j.cmpb.2022.106776},
-url = {https://www.sciencedirect.com/science/article/pii/S0169260722001626}
+@article{
 }
 ```
 **A fuzzy distance-based ensemble of deep models for cervical cancer detection**
