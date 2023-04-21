@@ -43,4 +43,5 @@ def mse_ensemble(model1,model2,model3,x_train , y_train , x_val ,y_val):
     ensembled_pred = np.argmax(summed, axis=1)
     accuracy_ens = accuracy_score(ensembled_pred, y_val)
     print(f"The accuracy after ensembling on the{fold_no+1}th fold: ", accuracy_ens)
+    return finals
     
