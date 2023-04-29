@@ -1,12 +1,19 @@
 # Mean and standard deviation based ensemble network for cervical cancer detection
-"MSENet: Mean and standard deviation based ensemble network for cervical cancer detection" published in Engineering Applications of Artificial Intelligence, Elsevier
+"MSENet: Mean and standard deviation based ensemble network for cervical cancer detection" published in Engineering Applications of Artificial Intelligence, Elsevier (Aug 2023)
 ```
-@article{
+@article{pramanik2023msenet,
+  title={MSENet: Mean and standard deviation based ensemble network for cervical cancer detection},
+  author={Pramanik, Rishav and Banerjee, Bihan and Sarkar, Ram},
+  journal={Engineering Applications of Artificial Intelligence},
+  volume={123},
+  pages={106336},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
 **MSENet: Mean and standard deviation based ensemble network for cervical cancer detection**
 
-Find the original paper [Coming Soon]().
+Find the original paper [Here](https://doi.org/10.1016/j.engappai.2023.106336).
 
 # Datasets Links
 1. [SIPaKMeD SCI Pap Smear Images](https://www.cs.uoi.gr/~marina/sipakmed.html)
